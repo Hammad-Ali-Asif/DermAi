@@ -1,0 +1,115 @@
+/* Header.css */
+.header {
+    text-align: center;
+    background: linear-gradient(120deg, #43A047, #A8B19E); /* Smooth premium gradient */
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    backdrop-filter: blur(12px); /* Glass effect */
+    transition: all 0.4s ease-in-out;
+}
+
+.brand {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: 'Georgia', serif;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #1d1b12, #1a0a0a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: none; /* ✅ Ensures text stays as written */
+}
+
+
+.brand:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Animated Tagline */
+.tagline {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.85);
+    margin-left: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    font-size: 26px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #2E7D32;
+    padding: 12px 14px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    right: 100px; /* Adjusted to prevent overlap */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hamburger-menu:hover {
+    background-color: #ffffff;
+    color: #1B5E20;
+    
+
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding-right: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-profile span {
+    margin-left: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        font-size: 26px;
+        padding: 15px;
+    }
+
+    .hamburger-menu {
+        right: 60px;
+    }
+
+    .brand {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,197 @@
+/* src/ProfileUploadPage.css */
+
+/* Ensure full viewport height and proper spacing from the header */
+.profile-container {
+  height: 100vh;
+  width: 100vw;
+  background: url("./assets/profile-background.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center;
+  padding-top: 80px; /* Adjust this based on your header height */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent scrolling issues */
+}
+  /* Header Section */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-icon {
+    font-size: 32px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #4CAF50;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Enhanced Dropdown Menu for Logout */
+  .dropdown-menu {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    min-width: 180px;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dropdown-menu ul li {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dropdown-menu ul li:hover {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  
+  /* Custom Icon for Logout */
+  .logout-icon {
+    font-size: 18px;
+    margin-right: 8px;
+    color: #ff5555;
+  }
+  
+  .user-name-dropdown {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Profile Box */
+  .profile-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+  }
+  
+  .profile-box h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .upload-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 500px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; /* Keep in view */
+  }
+
+  .upload-box h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  
+  .upload-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload-icon {
+    font-size: 50px;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .upload-box p {
+    margin: 0;
+    color: #777;
+    font-size: 16px;
+  }
+  
+  .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .image-preview {
+    width: 100%;
+    max-width: 300px;
+    max-height: 400px; /* Ensures image does not overflow */
+    height: auto;
+    object-fit: contain; /* Ensures entire image is visible without distortion */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #4CAF50; /* Optional: Add a border for better visibility */
+  }
+  
+  
+  /* Buttons for Upload and Discard */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .upload-button,
+  .discard-button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+  }
+  .discard-button {
+    background-color: #FF6347;
+  }
+  
+  .upload-button:hover,
+  .discard-button:hover {
+    opacity: 0.8;
+  }

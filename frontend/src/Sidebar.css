@@ -1,0 +1,109 @@
+/* Sidebar */
+.sidebar {
+  height: 100vh;
+  width: 280px;
+  position: fixed;
+  top: 0;
+  right: -280px; /* Hidden by default */
+  background: #78ba71;
+  padding-top: 20px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.4s ease-in-out;
+  z-index: 1001;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Sidebar Open & Closed States */
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar.closed {
+  right: -280px;
+}
+
+/* Close Button - Works Properly */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px; /* Keep it on the right */
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ffeb3b; /* Yellow */
+}
+
+/* Sidebar Title - Move "Navigation" slightly to the right */
+.sidebar h2 {
+  padding-left: 20px;  /* ⬅️ Moves it slightly to the right */
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+
+/* Navigation Links */
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar ul li {
+  padding: 12px 20px;
+  text-align: left;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  letter-spacing: 1px;
+}
+
+/* ✅ Slightly Raised Logout Button */
+.logout-container {
+  margin-top: auto;
+  margin-bottom: 20px; /* Raised slightly from the bottom */
+}
+
+.logout-container a {
+  display: block;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.logout-container a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  letter-spacing: 1px;
+}

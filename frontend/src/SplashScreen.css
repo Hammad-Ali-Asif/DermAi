@@ -1,0 +1,94 @@
+/* Fullscreen Splash Container */
+.splash-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EAE0C8; /* ✅ Modern gradient */
+    animation: backgroundGlow 4s infinite alternate;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: bounce 1.5s infinite alternate ease-in-out; /* ✅ Smooth bounce effect */
+  }
+  
+  /* Logo Style */
+  .splash-logo {
+    width: 180px;
+    height: auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Splash Screen Title */
+  .splash-title {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Splash Screen Text */
+  .splash-text {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(8, 4, 4, 0.9);
+    margin-top: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* ✅ Fade Animations */
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  /* ✅ Background Glow Animation */
+  @keyframes backgroundGlow {
+    0% {
+      background: #F8F8F8;
+    }
+    100% {
+      background: #F8F8F8;
+    }
+  }
+  
+  /* ✅ Logo Bounce Animation */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  /* ✅ Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

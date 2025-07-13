@@ -1,0 +1,153 @@
+/* Reset & Base Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Page Wrapper */
+.progress-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: url('./assets/profile-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* Main Container */
+.progress-container {
+  margin-top: 100px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+/* Download Button - styled like DermaAI */
+.download-btn {
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #A8B19E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.download-btn:hover {
+  background-color: #3E6B48;
+}
+
+/* Progress List Container */
+.progress-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Individual Progress Entry */
+.progress-item {
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  color: #000;
+}
+
+.progress-item:hover {
+  transform: scale(1.03);
+}
+
+/* Image Styling */
+.progress-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Text Info Block */
+.progress-info {
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Diet Sections */
+.diet-section {
+  margin-top: 10px;
+}
+
+.diet-section p {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.diet-section ul {
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.diet-section li {
+  list-style-type: disc;
+  color: #444;
+}
+
+/* Paragraphs */
+p {
+  margin: 6px 0;
+}
+
+/* Media Query - Mobile Friendly */
+@media (max-width: 768px) {
+  .progress-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .progress-item {
+    width: 90%;
+  }
+
+  .progress-container {
+    padding: 20px;
+  }
+
+  .download-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Optional Bounding Box Debug */
+.bounding-box {
+  position: absolute;
+  border: 2px solid red;
+  box-sizing: border-box;
+}

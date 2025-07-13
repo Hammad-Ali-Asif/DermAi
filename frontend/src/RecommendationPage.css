@@ -1,0 +1,124 @@
+/* Ensure the entire page fits the viewport and starts below the header */
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Container */
+.recommendation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px; /* ⬆️ Increased padding to move content slightly down */
+  font-family: "Arial", sans-serif;
+  background: url('./assets/pro.png') no-repeat center center/cover;
+  height: calc(100vh - 80px); /* Ensures content fills remaining space */
+  width: 100%;
+}
+
+/* Header Title */
+.recommendation-container h1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  gap: 30px;
+}
+
+/* Image Section */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* ⬆️ Adds extra spacing under the header */
+}
+
+.diagnosis-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.diagnosis-image:hover {
+  transform: scale(1.05);
+}
+
+/* Information Section */
+.info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px; /* ⬆️ Adds spacing below the header */
+}
+
+/* Information Boxes */
+.info-box {
+  padding: 18px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Different colors for different info */
+.diagnosis-box {
+  background-color: #A8B19E;
+}
+
+.severity-box {
+  background-color: #A8B19E;
+}
+
+.recommendation-box {
+  background-color: #A8B19E;
+}
+
+/* Bullet Points */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+li {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* Save Button */
+.save-button {
+  padding: 12px 20px;
+  background-color: #78ba71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px; /* ⬆️ Moves button slightly below */
+}
+
+.save-button:hover {
+  background-color: #3E6B48;
+}
