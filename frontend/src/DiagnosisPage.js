@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { detectAcne } from "./api/hf";           // your HF utility
+import { detectAcne } from "./hf";           // your HF utility
 import "./DiagnosisPage.css";
 
 export default function DiagnosisPage() {
