@@ -2,7 +2,7 @@
 // src/api/hf.js
 export async function detectAcne(imageFile) {
   const response = await fetch(
-    "https://api-inference.huggingface.co/models/hammadali11/dermai-acne-detector",
+    "https://huggingface.co/hammadali11/dermai-acne-detector/blob/main/acne_cnn_model.h5",
     {
       method: "POST",
       headers: {
