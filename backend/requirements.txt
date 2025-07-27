@@ -16,3 +16,4 @@ requests
 thop
 gunicorn
 tensorflow
+ultralytics
